@@ -44,9 +44,9 @@ tt_hashtags_pool = ['#coupon', '#sale', '#shop', '#followforfollowback', '#lifeh
 
 
 # Telegram API Connection
-api = 'nope'
-channelid = '-1001516954483'
-channelid_updates = '-1001547537905'
+api = ''
+channelid = ''
+channelid_updates = ''
 parsemode = 'HTML'
 
 # #### TELEGRAM URLS ######
@@ -414,7 +414,7 @@ def metavers_uploadVid(msgContent_facebook, msgContent_instagram):
 
 def youtube_upload(msgContent_youtube, msgContent_title_youtube):
 
-    url = 'https://studio.youtube.com/channel/UCqLh4jzbJ5-6mVQeh3a6vuQ'
+    url = ''
 
     # Positions & Delays variables - CREATE POST #
     button_click_delays0 = 0.25
@@ -733,13 +733,7 @@ with open(f'{pool}{choice}', encoding='utf-8') as products:
                      f'Product Rating » {row[11]}/5 ✅\n' \
                      f'Sold {row[9]} times in last 90days ✅\n' \
                      f'\nNote: Those are special & rare discounts we find on the internet, they usually dissapear after a few days so make sure to be quick.\n\n' \
-                     f'Our Website - http://aliexpressbot.com\n' \
-                     f'Instagram - https://www.instagram.com/aliexpresscouponbot\n' \
-                     f'Facebook - https://www.facebook.com/aliexpresscouponbot\n' \
-                     f'Telegram - https://t.me/AliExpressTech2022\n' \
-                     f'Linktree - https://linktr.ee/aliexpressdiscounts\n' \
-                     f'\nOur channel is mainly about hot #AliExpress products and hot #discounts, we bring you the best #sales from AliExpress with a lot of hot #coupons that will save you a lot of money!'
-
+        
         msgContent_telegram = f'<b>Product Description 👇🏼\n\n<strong>{row[3]}\n\n</strong></b>' \
                      f'\t<b>✅ FREE SHIPPING 🔥</b>\n' \
                      f'\t<b>✂ COUPON CODES</b> » <b><a href={G}{row[12]}{G}>{coupon_count} Coupons</a></b>\n\n' \
